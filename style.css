@@ -1,0 +1,143 @@
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px #888;
+}
+
+.info {
+  position: absolute;
+  background-color: rgb(245, 245, 245);
+  left: 0;
+  bottom: -393px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+  transition: 0.3s;
+}
+
+.container:hover .info {
+  bottom: -270px;
+}
+.container:hover img {
+  filter: blur(1px);
+}
+
+.item {
+  border-bottom: 1px solid #b9b9b960;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.item h4 {
+  float: left;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 200;
+  color: #777;
+}
+
+h4 > span {
+  font-weight: bold;
+  color: #000;
+  display: block;
+}
+
+.item > span {
+  float: right;
+  color: crimson;
+  font-weight: bold;
+}
+
+.size {
+  position: relative;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.like:before {
+  content: "\f08a";
+  position: absolute;
+  font-family: fontawesome;
+  color: #bbb;
+  right: 0;
+  top: 0;
+}
+
+.like.active:before {
+  content: "\f004";
+  color: crimson;
+}
+
+.size h4 {
+  margin: 0;
+}
+
+.size span,
+.color span {
+  margin-right: 5px;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  line-height: 17px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.size span.active {
+  background-color: #000;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: #fff;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.color span:nth-child(1) {
+  background-color: crimson;
+}
+
+.color span:nth-child(2) {
+  background-color: orange;
+}
+.color span:nth-child(3) {
+  background-color: olive;
+}
+.color span:nth-child(4) {
+  background-color: pink;
+}
+.color span:nth-child(5) {
+  background-color: purple;
+}
+
+.color span.active {
+  border-radius: 50%;
+}
+
+button {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
